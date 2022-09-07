@@ -6,7 +6,6 @@ const routes = {
     about: '/about',
     contact: '/contact',
     write: '/write',
-    profile: '/:nickname',
-    write: '/write',
+    profile: '/profile/:nickname',
 };
 export default routes;

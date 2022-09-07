@@ -1,22 +1,22 @@
 import config from '~/config';
 
 // Layout
-
+import { SlideLayout } from '~/layouts';
 // Page
-import HomePage from '~/pages/Home/HomePage';
-import ProfilePage from '~/pages/Profile/ProfilePage';
-import AboutPage from '~/pages/About/AboutPage';
-import ContactPage from '~/pages/Contact/ContactPage';
-import PostPage from '~/pages/Post/PostPage';
-import WritePage from '~/pages/Write/WritePage';
+import HomePage from '~/pages/Home';
+import ProfilePage from '~/pages/Profile';
+import AboutPage from '~/pages/About';
+import ContactPage from '~/pages/Contact';
+import PostPage from '~/pages/Post';
+import WritePage from '~/pages/Write/';
 
 // Public routes
 const publicRoutes = [
-    { path: config.routes.home, component: HomePage },
-    { path: config.routes.about, component: AboutPage },
+    { path: config.routes.home, component: HomePage, layout: SlideLayout },
+    { path: config.routes.about, component: AboutPage, layouts: null },
     { path: config.routes.contact, component: ContactPage },
     { path: config.routes.post, component: PostPage },
-    { path: config.routes.write, component: WritePage },
+    { path: config.routes.write, component: WritePage, layouts: null },
     { path: config.routes.profile, component: ProfilePage },
 ];
 

@@ -1,1 +1,1 @@
-export { defaults } from './SlideLayout';
+export { default } from './SlideLayout';

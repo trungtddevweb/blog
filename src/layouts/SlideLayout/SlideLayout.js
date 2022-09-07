@@ -5,6 +5,8 @@ import classNames from 'classnames/bind';
 // Comp
 import Header from '../components/Header';
 import Search from '../components/Search';
+import Footer from '../components/Footer';
+import Slide from '../components/Slide';
 
 const cx = classNames.bind(styles);
 
@@ -12,8 +14,9 @@ const SlideLayout = ({ children }) => {
     return (
         <div className={cx('wrapper')}>
             <Header />
-            <Search />
+            <Slide />
             <div className={cx('container')}>{children}</div>
+            <Footer />
         </div>
     );
 };
