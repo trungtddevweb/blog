@@ -9,6 +9,7 @@ import AboutPage from '~/pages/About';
 import ContactPage from '~/pages/Contact';
 import PostPage from '~/pages/Post';
 import WritePage from '~/pages/Write/';
+import LoginPage from '~/pages/Login';
 
 // Public routes
 const publicRoutes = [
@@ -18,6 +19,7 @@ const publicRoutes = [
     { path: config.routes.post, component: PostPage },
     { path: config.routes.write, component: WritePage, layouts: null },
     { path: config.routes.profile, component: ProfilePage },
+    { path: config.routes.login, component: LoginPage, layouts: null },
 ];
 
 const privateRoutes = [];

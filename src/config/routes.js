@@ -7,5 +7,6 @@ const routes = {
     contact: '/contact',
     write: '/write',
     profile: '/profile/:nickname',
+    login: '/login',
 };
 export default routes;

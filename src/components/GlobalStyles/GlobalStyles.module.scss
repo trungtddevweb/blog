@@ -1,16 +1,15 @@
 @import 'normalize.css';
 
 :root {
-    --primary: #fe2c55;
+    --primary: rgba(196, 247, 243, 0.32);
     --black: #000;
     --white: #fff;
-    --text-color: #161823;
-
     --font-family: 'Roboto', sans-serif;
-
+    --fz-md: 16px;
+    --fz-normal: 1.4rem;
     // Default layout
     // --default-layout-header-height: 60px;
-    // --default-layout-width: 1150px;
+    --default-layout-width: 1150px;
     // --default-layout-horizontal-spacer: 24px;
 }
 
@@ -20,9 +19,9 @@
     box-sizing: border-box;
 }
 
-html {
-    // font-size: 62.5%;
-}
+// html {
+//     // font-size: 62.5%;
+// }
 
 
 body {
@@ -30,7 +29,6 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizespeed;
-    color: var(--text-color);
     overflow-y: overlay;
 }
 
@@ -58,6 +56,7 @@ input,
 }
 
 a {
-    color: var(--text-color);
+    // color: var(--text-color);
     text-decoration: none;
+    // font-size: none;
 }

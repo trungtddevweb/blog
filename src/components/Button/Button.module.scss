@@ -1,0 +1,26 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: var(--fz-normal);
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+// Button types
+.primary {
+    // color: var(--white); 
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: all ease .3s;
+
+    &:hover {
+        border-color: var(--primary);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), lightblue;
+    }
+}

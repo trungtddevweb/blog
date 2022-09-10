@@ -1,0 +1,26 @@
+.wrapper {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 90%;
+    padding: 10px 20px 10px 10px;
+    font-size: var(--fz-md);
+    background-color: transparent;
+
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    background-color: rgba(214, 204, 209, 0.54);
+    padding: 10px 14px;
+    border-radius: 0 20px 20px 0;
+}
