@@ -12,7 +12,7 @@
 
 .search-input {
     width: 90%;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 20px;
     font-size: var(--fz-md);
     background-color: transparent;
 
@@ -23,4 +23,9 @@
     background-color: rgba(214, 204, 209, 0.54);
     padding: 10px 14px;
     border-radius: 0 20px 20px 0;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightgray;
+    }
 }

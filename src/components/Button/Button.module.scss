@@ -18,9 +18,4 @@
     background-color: var(--primary);
     border-color: var(--primary);
     transition: all ease .3s;
-
-    &:hover {
-        border-color: var(--primary);
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), lightblue;
-    }
 }

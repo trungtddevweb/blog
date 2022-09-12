@@ -1,7 +1,10 @@
-import React from 'react';
+import styles from './About.module.scss';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 const AboutPage = () => {
-    return <div>AboutPage</div>;
+    return <div className={cx('wrapper')}>AboutPage</div>;
 };
 
 export default AboutPage;

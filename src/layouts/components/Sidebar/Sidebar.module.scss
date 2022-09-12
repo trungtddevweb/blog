@@ -1,0 +1,66 @@
+.wrapper {
+    flex: 0.5;
+    position: sticky;
+    top: 30px;
+    height: 100vh;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.section {
+    +.section {
+        margin-top: 10px;
+    }
+
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    color: gray;
+
+    h5 {
+        color: var(--black);
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+}
+
+
+.bio {
+    width: 80%;
+    font-style: italic;
+    text-align: justify;
+}

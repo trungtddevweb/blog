@@ -9,7 +9,12 @@ const Search = () => {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
-                <input className={cx('search-input')} type="text" placeholder="Search for articles, categories... " />
+                <input
+                    className={cx('search-input')}
+                    spellCheck={false}
+                    type="text"
+                    placeholder="Search for articles, categories... "
+                />
                 <FontAwesomeIcon className={cx('search-icon')} icon={faSearch} />
             </div>
         </div>

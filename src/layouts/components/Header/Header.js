@@ -19,10 +19,16 @@ const Header = () => {
                     <Search />
                     <div className={cx('navigation')}>
                         <ul className={cx('list')}>
-                            <Button to={config.routes.home}>Home</Button>
-                            <Button to={config.routes.contact}>Contact</Button>
-                            <Button to={config.routes.write}>Write</Button>
-                            <Button to={config.routes.login} primary>
+                            <Button className={cx('item')} to={config.routes.home}>
+                                Home
+                            </Button>
+                            <Button className={cx('item')} to={config.routes.contact}>
+                                Contact
+                            </Button>
+                            <Button className={cx('item')} to={config.routes.write}>
+                                Write
+                            </Button>
+                            <Button className={cx('item')} to={config.routes.login} primary>
                                 Login
                             </Button>
                         </ul>

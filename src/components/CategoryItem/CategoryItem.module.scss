@@ -1,0 +1,37 @@
+.wrapper {
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    transition: linear .3s;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background-color: lightgray;
+
+    }
+
+
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 100px;
+    font-size: 1.2rem;
+
+    i {
+        color: rgb(39, 156, 196);
+    }
+}
+
+.title {
+    font-weight: 500;
+    color: var(--black);
+}
