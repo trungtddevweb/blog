@@ -28,7 +28,7 @@ const Header = () => {
                             <Button className={cx('item')} to={config.routes.write}>
                                 Write
                             </Button>
-                            <Button className={cx('item')} to={config.routes.login} primary>
+                            <Button className={cx('item')} to={config.routes.login}>
                                 Login
                             </Button>
                         </ul>

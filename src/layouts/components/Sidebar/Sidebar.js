@@ -75,7 +75,7 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className={cx('section')}>
-                <h4 className={cx('title')}>Profile</h4>
+                <h4 className={cx('title')}>About me</h4>
                 <Link to={'/profile/trungtran'}>
                     <div className={cx('list')}>
                         <div className={cx('avatar')}>

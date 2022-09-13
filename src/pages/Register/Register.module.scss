@@ -1,5 +1,5 @@
 .wrapper {
-    height: calc(100vh - 95px);
+    height: var(--default-background-height);
     background: url('../../assets/imgs/backgroundLogin.jpg');
 }
 
@@ -43,6 +43,8 @@
 
 .input {
     font-size: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
 .text,

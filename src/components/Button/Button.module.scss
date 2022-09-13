@@ -14,8 +14,15 @@
 
 // Button types
 .primary {
-    // color: var(--white); 
-    background-color: var(--primary);
+    color: var(--black);
+    background-color: var(--main-color);
+    font-weight: 500;
     border-color: var(--primary);
     transition: all ease .3s;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }

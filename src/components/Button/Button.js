@@ -4,7 +4,7 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
-const Button = ({ to, href, disable = false, primary = false, onClick, children, className, ...passProps }) => {
+const Button = ({ to, href, color, disable = false, primary = false, onClick, children, className, ...passProps }) => {
     let Comp = 'button';
     const props = {
         onClick,
@@ -35,7 +35,7 @@ const Button = ({ to, href, disable = false, primary = false, onClick, children,
     });
 
     return (
-        <Comp className={classes} {...props}>
+        <Comp style={{ backgroundColor: color }} className={classes} {...props}>
             <span className={cx('title')}>{children}</span>
         </Comp>
     );

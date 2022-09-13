@@ -5,7 +5,6 @@ import DefaultLayout, { SlideLayout } from '~/layouts';
 // Page
 import HomePage from '~/pages/Home';
 import ProfilePage from '~/pages/Profile';
-import AboutPage from '~/pages/About';
 import ContactPage from '~/pages/Contact';
 import PostPage from '~/pages/Post';
 import WritePage from '~/pages/Write/';
@@ -16,7 +15,6 @@ import Register from '~/pages/Register';
 // Public routes
 const publicRoutes = [
     { path: config.routes.home, component: HomePage, layout: SlideLayout },
-    { path: config.routes.about, component: AboutPage, layouts: DefaultLayout },
     { path: config.routes.contact, component: ContactPage },
     { path: config.routes.category, component: CategoryPage },
     { path: config.routes.post, component: PostPage },

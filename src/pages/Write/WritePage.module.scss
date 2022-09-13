@@ -1,0 +1,78 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--default-background-height);
+    background: url('../../assets/imgs/writeBackground.jpg');
+}
+
+.container {
+    width: var(--default-layout-width);
+    height: 70vh;
+    background-color: rgba(232, 226, 229, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+
+.write-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icon {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 4px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.choose-file {
+    display: none;
+}
+
+.write-input {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    &:focus {
+        border-color: blue;
+    }
+}
+
+.textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 1.4rem;
+    border: none;
+    padding: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
