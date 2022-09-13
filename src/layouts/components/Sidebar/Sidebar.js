@@ -63,7 +63,9 @@ const Sidebar = () => {
         },
     ];
 
+    // eslint-disable-next-line no-unused-vars
     const [category, setCategory] = useState(initCategory);
+
     return (
         <div className={cx('wrapper')}>
             <div className={cx('section')}>

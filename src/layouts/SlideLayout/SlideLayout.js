@@ -4,7 +4,6 @@ import classNames from 'classnames/bind';
 
 // Comp
 import Header from '../components/Header';
-import Search from '../components/Search';
 import Footer from '../components/Footer';
 import Slide from '../components/Slide';
 
