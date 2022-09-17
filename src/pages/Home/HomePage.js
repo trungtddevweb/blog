@@ -3,6 +3,7 @@ import styles from './HomePage.module.scss';
 import classNames from 'classnames/bind';
 import Sidebar from '~/layouts/components/Sidebar';
 import Post from '~/components/Post';
+import axios from 'axios';
 
 const cx = classNames.bind(styles);
 
@@ -10,10 +11,12 @@ const HomePage = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
-            .then((res) => res.json())
-            .then((data) => setPosts(data))
-            .catch((err) => console(err));
+        const fetchAPI = async () => {
+            const result = await axios.get('https://fakestoreapi.com/products');
+            const { data } = result;
+            setPosts(data);
+        };
+        fetchAPI();
     }, []);
 
     return (

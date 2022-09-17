@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 
-import SlideLayout from '~/layouts';
+import SlideLayout, { NullLayout } from '~/layouts';
 import DefaultLayout from '~/layouts';
 
 function App() {
@@ -17,6 +17,8 @@ function App() {
                             Layout = route.layout;
                         } else if (route.layout === DefaultLayout) {
                             Layout = DefaultLayout;
+                        } else if (route.layout === null) {
+                            Layout = NullLayout;
                         }
 
                         return (

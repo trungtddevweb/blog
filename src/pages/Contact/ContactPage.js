@@ -11,7 +11,7 @@ const ContactPage = () => {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
-                <h3>Contact</h3>
+                <h3 className={cx('contact-text')}>Contact</h3>
                 <div className={cx('section')}>
                     <h4 className={cx('question')}>Have a question? Leave comment below</h4>
                     <form className={cx('form')}>

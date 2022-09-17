@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     background-color: lightgray;
+    height: var(--default-background-height);
 }
 
 .container {
@@ -17,7 +18,7 @@
 
 }
 
-h3 {
+.contact-text {
     font-weight: 500;
     border-bottom: 1px solid var(--black);
 }

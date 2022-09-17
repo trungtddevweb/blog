@@ -18,10 +18,10 @@ const publicRoutes = [
     { path: config.routes.contact, component: ContactPage },
     { path: config.routes.category, component: CategoryPage },
     { path: config.routes.post, component: PostPage },
-    { path: config.routes.write, component: WritePage, layouts: null },
+    { path: config.routes.write, component: WritePage, layout: DefaultLayout },
     { path: config.routes.profile, component: ProfilePage },
-    { path: config.routes.login, component: LoginPage, layouts: null },
-    { path: config.routes.register, component: Register, layouts: DefaultLayout },
+    { path: config.routes.login, component: LoginPage, layout: null },
+    { path: config.routes.register, component: Register, layout: null },
 ];
 
 const privateRoutes = [];

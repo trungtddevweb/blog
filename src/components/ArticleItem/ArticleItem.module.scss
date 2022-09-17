@@ -1,0 +1,39 @@
+.wrapper {
+    border-radius: 8px;
+    transition: linear .3s;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.icon {
+    font-size: 1.2rem;
+}
+
+.img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.content {
+    font-size: 1rem;
+
+
+}
+
+.author {
+    font-size: 0.9rem;
+    color: gray;
+}
