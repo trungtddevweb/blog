@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import styles from './HomePage.module.scss';
 import classNames from 'classnames/bind';
 import Sidebar from '~/layouts/components/Sidebar';
-import Post from '~/components/Post';
 import axios from 'axios';
+import ListPost from '~/components/ListPost';
 
 const cx = classNames.bind(styles);
 
@@ -26,9 +26,7 @@ const HomePage = () => {
                     <div className={cx('newfeed')}>
                         <h4 className={cx('heading')}>Recent</h4>
                         <div className={cx('list-post')}>
-                            {posts.map((post) => (
-                                <Post post={post} key={post.id} />
-                            ))}
+                            <ListPost posts={posts} />
                         </div>
                     </div>
                 </div>

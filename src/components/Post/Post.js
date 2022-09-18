@@ -7,19 +7,19 @@ import Button from '../Button';
 
 const cx = classNames.bind(styles);
 
-const Post = ({ post }) => {
+const Post = ({ data }) => {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
-                <h4 className={cx('title')}>{post.title}</h4>
-                <Image className={cx('img')} src={post.image} />
+                <h4 className={cx('title')}>{data.title}</h4>
+                <Image className={cx('img')} src={data.image} />
                 <div className={cx('content')}>
                     <p className={cx('desc')}>
                         All the videos, songs, images, and graphics used in the video belong to their respective owners
                         and I do not claim any right over them.All the videos, songs, images, and graphics used in the
                         video belong to their respective owners and I do not claim any right over them.
                     </p>
-                    <p className={cx('category')}>Category: {post.category}</p>
+                    <p className={cx('category')}>Category: {data.category}</p>
                     <div className={cx('updatedAt')}>
                         <FontAwesomeIcon icon={faCalendarDays} />
                         <time>10 days ago</time>

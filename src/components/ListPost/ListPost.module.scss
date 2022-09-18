@@ -1,0 +1,19 @@
+.page-item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.page-active {
+    background-color: lightcoral;
+    padding: 2px 4px;
+
+}
+
+.page-disabled-link {
+    color: lightgray;
+}
