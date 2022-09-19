@@ -14,7 +14,7 @@ const LoginPage = () => {
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
                 <form className={cx('form')}>
-                    <h3 children={cx('title')}>Login Form</h3>
+                    <h3 children={cx('title')}>Login</h3>
                     <div className={cx('row')}>
                         <i>
                             <FontAwesomeIcon icon={faUser} />
