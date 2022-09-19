@@ -23,50 +23,51 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div className={cx('wrapper')}>
-            <div className={cx('container')}>
-                <div className={cx('content')}>
-                    <div className={cx('newfeed')}>
-                        <h4 className={cx('heading')}>Recent</h4>
-                        <div className={cx('list-post')}>
-                            {isLoading ? (
-                                <div className={cx('loadingio-spinner-spin-35yb8wurz1r')}>
-                                    <div className={cx('ldio-kbsxq5qomag')}>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                        <div>
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ) : (
-                                <ListPost posts={posts} />
-                            )}
-                        </div>
-                    </div>
-                </div>
-                <Sidebar />
-            </div>
-        </div>
+        //     <div className={cx('wrapper')}>
+        //         <div className={cx('container')}>
+        //             <div className={cx('content')}>
+        //                 <div className={cx('newfeed')}>
+        //                     <h4 className={cx('heading')}>Recent</h4>
+        //                     <div className={cx('list-post')}>
+        //                         {isLoading ? (
+        //                             <div className={cx('loadingio-spinner-spin-35yb8wurz1r')}>
+        //                                 <div className={cx('ldio-kbsxq5qomag')}>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                     <div>
+        //                                         <div></div>
+        //                                     </div>
+        //                                 </div>
+        //                             </div>
+        //                         ) : (
+        //                             <ListPost posts={posts} />
+        //                         )}
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //             <Sidebar />
+        //         </div>
+        //     </div>
+        <div>Hello</div>
     );
 };
 

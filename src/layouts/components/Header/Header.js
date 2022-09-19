@@ -5,11 +5,18 @@ import imgs from '~/assets/imgs';
 import { Link } from 'react-router-dom';
 import config from '~/config';
 import Button from '~/components/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 const Header = () => {
-    const user = true;
+    const user = false;
+    const [showBars, setShowBars] = useState(false);
+    const toggleBars = () => {
+        setShowBars((prev) => !prev);
+    };
     return (
         <header className={cx('wrapper')}>
             <div className={cx('container')}>
@@ -18,7 +25,12 @@ const Header = () => {
                         <img className={cx('logo')} src={imgs.logo} alt="Memory" />
                     </Link>
                     <Search />
-                    <div className={cx('navigation')}>
+                    <FontAwesomeIcon onClick={toggleBars} className={cx('bars')} icon={faBars} />
+                    <div
+                        className={cx('navigation', {
+                            showBars,
+                        })}
+                    >
                         <ul className={cx('list')}>
                             <Button className={cx('item')} to={config.routes.home}>
                                 Home
@@ -35,7 +47,7 @@ const Header = () => {
                                 </Button>
                             ) : (
                                 <Button className={cx('item')} to={config.routes.login}>
-                                    Logout
+                                    Log out
                                 </Button>
                             )}
                         </ul>
