@@ -39,3 +39,37 @@
 
 
 }
+
+// Responsive
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .background {}
+
+    .desc {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.34);
+        padding: 20px 0;
+        transform: translateY(50%);
+        z-index: 2;
+    }
+
+    .content {
+        padding: 0 10px;
+
+        h3 {
+            display: none;
+        }
+
+        q {
+            font-size: 1.1rem;
+        }
+    }
+
+}

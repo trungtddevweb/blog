@@ -23,7 +23,7 @@ const ListPost = ({ posts }) => {
 
     const goTop = () => {
         window.scrollTo({
-            top: 500,
+            top: 265,
             behavior: 'smooth',
         });
     };

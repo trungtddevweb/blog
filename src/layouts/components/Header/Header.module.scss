@@ -116,7 +116,9 @@
         width: 100%;
         display: none;
         transition: linear 0.4s;
-
+        position: absolute;
+        top: 70px;
+        background-color: var(--main-color);
     }
 
     .list {

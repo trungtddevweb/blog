@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .search-input {
@@ -15,7 +16,6 @@
     padding: 10px 20px 10px 20px;
     font-size: var(--fz-md);
     background-color: transparent;
-
 }
 
 .search-icon {
@@ -39,6 +39,8 @@
     padding: 10px;
     cursor: pointer;
     color: gray;
+    position: absolute;
+    right: 48px;
 }
 
 // Responsive
@@ -49,4 +51,9 @@
         right: 60px;
 
     }
+
+    .search-input {
+        box-sizing: border-box;
+    }
+
 }

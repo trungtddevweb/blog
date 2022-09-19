@@ -174,3 +174,47 @@
 .ldio-kbsxq5qomag div {
     box-sizing: content-box;
 }
+
+// Responsive
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .container {
+        width: var(--default-layout-width);
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        margin-top: -100px;
+        background-color: rgb(221, 217, 217);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.58);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.58);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.58);
+        border-radius: 10px;
+        z-index: 3;
+    }
+
+    .heading {
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+        position: relative;
+        margin: 10px 0;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: var(--white);
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    // Animation
+    .loadingio-spinner-spin-35yb8wurz1r {
+        width: 200px;
+        height: 200px;
+    }
+}

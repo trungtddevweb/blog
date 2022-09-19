@@ -13,9 +13,9 @@ const SlideLayout = ({ children }) => {
     return (
         <div className={cx('wrapper')}>
             <Header />
-            {/* <Slide /> */}
-            {/* <div className={cx('container')}>{children}</div> */}
-            {/* <Footer /> */}
+            <Slide />
+            <div className={cx('container')}>{children}</div>
+            <Footer />
         </div>
     );
 };
