@@ -2,10 +2,16 @@
     background: var(--white);
     margin-bottom: 20px;
     border-radius: 8px;
+    transition: linear .3s;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .container {
     padding: 10px;
+    text-align: left;
 }
 
 .title {
@@ -15,6 +21,7 @@
     text-align: center;
     font-weight: 500;
     font-size: 1.4rem;
+
 }
 
 .img {
@@ -58,12 +65,17 @@
 .updatedAt {
     font-size: 1rem;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
 }
 
 .btn {
     width: 100%;
     font-size: 1.2rem;
+    background-color: var(--main-color);
+    margin: 10px 0;
 
     &:hover {
         color: blue;

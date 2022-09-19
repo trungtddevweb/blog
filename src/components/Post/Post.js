@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './Post.module.scss';
 import classNames from 'classnames/bind';
 import Image from '../Image';
@@ -12,29 +13,29 @@ const Post = ({ data }) => {
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
                 <h4 className={cx('title')}>{data.title}</h4>
-                <Image className={cx('img')} src={data.image} />
+                <Image className={cx('img')} src={data.img} alt={data.title} />
                 <div className={cx('content')}>
-                    <p className={cx('desc')}>
-                        All the videos, songs, images, and graphics used in the video belong to their respective owners
-                        and I do not claim any right over them.All the videos, songs, images, and graphics used in the
-                        video belong to their respective owners and I do not claim any right over them.
-                    </p>
+                    <p className={cx('desc')}>{data.excerpt}</p>
                     <p className={cx('category')}>Category: {data.category}</p>
                     <div className={cx('updatedAt')}>
-                        <FontAwesomeIcon icon={faCalendarDays} />
-                        <time>10 days ago</time>
+                        <FontAwesomeIcon color="orange" icon={faCalendarDays} />
+                        <time>{data.publishedAt}</time>
                     </div>
 
                     <p className={cx('author')}>
-                        Author: <span>Trung Tran</span>
+                        Author: <span>{data.author}</span>
                     </p>
-                    <Button to={`/post/slug`} className={cx('btn')}>
+                    <Button to={`/post/${data.id}`} className={cx('btn')}>
                         Read more
                     </Button>
                 </div>
             </div>
         </div>
     );
+};
+
+Post.propTypes = {
+    data: PropTypes.object.isRequired,
 };
 
 export default Post;

@@ -36,8 +36,8 @@ const ListPost = ({ posts }) => {
     return (
         <>
             <div className={cx('wrapper')}>
-                {currentItems.map((item) => (
-                    <Post data={item} key={item.id} />
+                {currentItems.map((item, i) => (
+                    <Post data={item} key={i} />
                 ))}
             </div>
             <ReactPaginate
