@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './HomePage.module.scss';
 import classNames from 'classnames/bind';
-// import Sidebar from '~/layouts/components/Sidebar';
+import Sidebar from '~/layouts/components/Sidebar';
 import axios from 'axios';
 import ListPost from '~/components/ListPost';
 
@@ -64,7 +64,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Sidebar /> */}
+                <Sidebar />
             </div>
         </div>
     );
