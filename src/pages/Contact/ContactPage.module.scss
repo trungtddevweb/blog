@@ -63,10 +63,11 @@
 
 .title {
     text-align: left;
+    margin: 10px 0;
 }
 
 .icon {
-    color: blue;
+    color: var(--white);
 }
 
 .social-list {
@@ -79,8 +80,66 @@
 
 .social-item {
     font-size: 1.1rem;
-    background-color: blue;
     color: var(--white);
     border-radius: 4px;
     padding: 4px 6px;
+}
+
+// Responsive
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        height: auto;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .container {
+        width: 100%;
+        background-color: var(--white);
+        margin: 0;
+    }
+
+    .contact-text {
+        font-weight: 500;
+        font-size: var(--fz-mb-text);
+    }
+
+    .question {
+        text-align: left;
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin: 20px 0 10px 0;
+    }
+
+    .form {
+        input {
+            width: 100%;
+        }
+    }
+
+    .social-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 1.1rem;
+        gap: 10px;
+    }
+
+
+    .social-item {
+        width: 80%;
+        font-size: 1rem;
+        color: var(--white);
+        border-radius: 4px;
+        padding: 6px 8px;
+    }
+
+    .content {
+        font-size: 1rem;
+        color: gray;
+    }
+
+    .title {
+        font-size: var(--fz-mb-text);
+    }
 }

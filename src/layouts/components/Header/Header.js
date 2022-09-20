@@ -41,6 +41,9 @@ const Header = () => {
                             <Button className={cx('item')} to={config.routes.write}>
                                 Write
                             </Button>
+                            <Button className={cx('item')} to={config.routes.category}>
+                                Category
+                            </Button>
                             {!user ? (
                                 <Button className={cx('item')} to={config.routes.login}>
                                     Login

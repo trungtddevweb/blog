@@ -76,3 +76,26 @@
         outline: none;
     }
 }
+
+// Responsive
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        height: auto;
+        padding: 30px 10px;
+        background: url('../../assets/imgs/backroundWrite.jpg');
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        background-color: none;
+    }
+
+    .heading {
+        font-style: italic;
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+
+}

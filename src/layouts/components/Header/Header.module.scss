@@ -56,6 +56,12 @@
 
 .item {
 
+    &:nth-child(4) {
+        display: none;
+        text-align: center;
+
+    }
+
     &:hover {
         border-color: var(--primary);
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), lightblue;
@@ -129,10 +135,10 @@
     }
 
     .item {
+        &:nth-child(4) {
+            display: flex;
 
-        &:hover {
-            border-color: var(--primary);
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), lightblue;
         }
     }
+
 }
