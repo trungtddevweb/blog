@@ -21,43 +21,43 @@ const cx = classNames.bind(styles);
 const Sidebar = () => {
     const initCategory = [
         {
-            title: 'Music',
+            title: 'Âm nhạc',
             to: '/categories/music',
             icon: <FontAwesomeIcon icon={faMusic} />,
         },
         {
-            title: 'Fashion',
+            title: 'Thời trang',
             to: '/categories/fashion',
             icon: <FontAwesomeIcon icon={faStore} />,
         },
         {
-            title: 'Confidence',
+            title: 'Lắng nghe',
             to: '/categories/confidence',
             icon: <FontAwesomeIcon icon={faUserGroup} />,
         },
         {
-            title: 'Receipt',
+            title: 'Công thức',
             to: `/categories/receipt`,
             icon: <FontAwesomeIcon icon={faReceipt} />,
         },
         {
-            title: 'Health',
+            title: 'Sức khỏe',
             to: `/categories/health`,
             icon: <FontAwesomeIcon icon={faNotesMedical} />,
         },
         {
-            title: 'Work',
+            title: 'Công việc',
             to: '/categories/work',
             icon: <FontAwesomeIcon icon={faBriefcase} />,
         },
         {
-            title: 'Animals',
+            title: 'Động vật',
             to: '/categories/animals',
             icon: <FontAwesomeIcon icon={faPaw} />,
         },
 
         {
-            title: 'Love',
+            title: 'Tình cảm',
             to: '/categories/heart',
             icon: <FontAwesomeIcon icon={faHeart} />,
         },
@@ -69,7 +69,7 @@ const Sidebar = () => {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('section')}>
-                <h4 className={cx('title')}>Categories</h4>
+                <h4 className={cx('title')}>Thể loại</h4>
                 <div className={cx('list')}>
                     {category.map((category) => (
                         <CategoryItem data={category} key={category.title} />
@@ -77,7 +77,7 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className={cx('section')}>
-                <h4 className={cx('title')}>About me</h4>
+                <h4 className={cx('title')}>Thông tin cá nhân</h4>
                 <Link to={'/profile/trungtran'}>
                     <div className={cx('list')}>
                         <div className={cx('avatar')}>
@@ -94,7 +94,7 @@ const Sidebar = () => {
                                 Muốn được tự do, đi du lịch thật nhiều nơi, trải nghiệm thật nhiều thứ trong cuộc sống
                             </p>
                             <p className={cx('total-posts')}>
-                                <span>10 </span>articles
+                                <span>10</span>bài viết
                             </p>
                         </div>
                     </div>

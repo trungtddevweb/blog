@@ -42,7 +42,9 @@ const PostPage = () => {
                     <div className={cx('wrapper-post')}>
                         <h3 className={cx('title')}>{postDetail.title}</h3>
                         <p className={cx('content')}>{postDetail.content}</p>
-                        <p className={cx('category')}>Category: {postDetail.category}</p>
+                        <p className={cx('category')}>
+                            Thể loại: <span>{postDetail.category}</span>
+                        </p>
                         <div className={cx('date')}>
                             <FontAwesomeIcon color="orange" icon={faCalendarDays} />
                             <span>{postDetail.publishedAt}</span>

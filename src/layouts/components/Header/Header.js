@@ -33,24 +33,24 @@ const Header = () => {
                     >
                         <ul className={cx('list')}>
                             <Button className={cx('item')} to={config.routes.home}>
-                                Home
+                                Trang chủ
                             </Button>
                             <Button className={cx('item')} to={config.routes.contact}>
-                                Contact
+                                Liên hệ
                             </Button>
                             <Button className={cx('item')} to={config.routes.write}>
-                                Write
+                                Viết blog
                             </Button>
                             <Button className={cx('item')} to={config.routes.category}>
-                                Category
+                                Thể loại
                             </Button>
                             {!user ? (
                                 <Button className={cx('item')} to={config.routes.login}>
-                                    Login
+                                    Đăng nhập
                                 </Button>
                             ) : (
                                 <Button className={cx('item')} to={config.routes.login}>
-                                    Log out
+                                    Đăng xuất
                                 </Button>
                             )}
                         </ul>

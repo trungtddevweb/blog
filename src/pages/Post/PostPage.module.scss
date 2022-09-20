@@ -51,6 +51,25 @@
     gap: 10px;
 }
 
+.category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+        background-color: #e90c59;
+        color: var(--white);
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
 // Animation
 @keyframes ldio-be45kgc28r4-o {
     0% {
@@ -135,4 +154,11 @@
 
 .ldio-be45kgc28r4 div {
     box-sizing: content-box;
+}
+
+// Responsive
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        padding: 10px;
+    }
 }

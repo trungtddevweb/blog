@@ -9,12 +9,12 @@
     font-size: var(--fz-normal);
     background-color: transparent;
     cursor: pointer;
+    color: var(--white);
 
 }
 
 // Button types
 .primary {
-    color: var(--black);
     background-color: var(--main-color);
     font-weight: 500;
     border-color: var(--primary);

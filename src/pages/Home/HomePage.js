@@ -27,7 +27,7 @@ const HomePage = () => {
             <div className={cx('container')}>
                 <div className={cx('content')}>
                     <div className={cx('newfeed')}>
-                        <h4 className={cx('heading')}>Recent</h4>
+                        <h4 className={cx('heading')}>Gần đây</h4>
                         <div className={cx('list-post')}>
                             {isLoading ? (
                                 <div className={cx('loadingio-spinner-spin-35yb8wurz1r')}>
