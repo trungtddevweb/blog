@@ -53,6 +53,17 @@
 .category {
     margin-bottom: 10px;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+        background-color: #e90c59;
+        color: var(--white);
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+
 }
 
 .author {
@@ -76,8 +87,12 @@
     font-size: 1.2rem;
     background-color: var(--main-color);
     margin: 10px 0;
+    border: 1px solid transparent;
+    transition: linear .3s;
 
     &:hover {
-        color: blue;
+        color: var(--main-color);
+        background-color: var(--white);
+        border-color: var(--main-color);
     }
 }

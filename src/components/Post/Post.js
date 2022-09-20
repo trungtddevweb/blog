@@ -16,7 +16,9 @@ const Post = ({ data }) => {
                 <Image className={cx('img')} src={data.img} alt={data.title} />
                 <div className={cx('content')}>
                     <p className={cx('desc')}>{data.excerpt}</p>
-                    <p className={cx('category')}>Thể loại: {data.category}</p>
+                    <p className={cx('category')}>
+                        Thể loại: <span>{data.category}</span>
+                    </p>
                     <div className={cx('updatedAt')}>
                         <FontAwesomeIcon color="orange" icon={faCalendarDays} />
                         <time>{data.publishedAt}</time>
