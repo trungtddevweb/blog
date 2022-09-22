@@ -11,6 +11,7 @@ import WritePage from '~/pages/Write/';
 import LoginPage from '~/pages/Login';
 import CategoryPage from '~/pages/Category';
 import Register from '~/pages/Register';
+import NotFoundPage from '~/pages/NotFound';
 
 // Public routes
 const publicRoutes = [
@@ -22,6 +23,7 @@ const publicRoutes = [
     { path: config.routes.profile, component: ProfilePage },
     { path: config.routes.login, component: LoginPage, layout: null },
     { path: config.routes.register, component: Register, layout: null },
+    { path: config.routes.notFound, component: NotFoundPage, layout: null },
 ];
 
 const privateRoutes = [];

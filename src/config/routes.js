@@ -7,5 +7,6 @@ const routes = {
     profile: '/profile/:nickname',
     login: '/login',
     register: '/register',
+    notFound: '*',
 };
 export default routes;
