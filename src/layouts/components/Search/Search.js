@@ -75,7 +75,7 @@ const Search = () => {
     return (
         // Using wrapper <div> or <span> tag around the reference element resolves
         // this by creating a new  parentNode context
-        <div>
+        <div className={cx('parent')}>
             <Tippy
                 interactive
                 visible={showResult && searchResult.length > 0}

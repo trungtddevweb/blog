@@ -18,13 +18,15 @@ const PostPage = () => {
     useEffect(() => {
         const fetchPostDetail = async () => {
             setIsLoading(true);
-            const result = await axios.get(`https://631e0ffccc652771a490d276.mockapi.io/api/collection/post/${postId}`);
+            const result = await axios.get(`http://localhost:3001/api/post/${postId}`);
             const { data } = result;
             setPostDetail(data);
             setIsLoading(false);
         };
         fetchPostDetail();
     }, [postId]);
+    const categories = postDetail.category;
+    const published = postDetail.createdAt;
 
     return (
         <div className={cx('wrapper')}>
@@ -38,20 +40,29 @@ const PostPage = () => {
                 </div>
             ) : (
                 <div className={cx('container')}>
-                    <Image alt={postDetail.title} className={cx('img')} src={postDetail.img} />
+                    <Image alt={postDetail.title} className={cx('img')} src={postDetail.image} />
                     <div className={cx('wrapper-post')}>
                         <h3 className={cx('title')}>{postDetail.title}</h3>
-                        <p className={cx('content')}>{postDetail.content}</p>
-                        <p className={cx('category')}>
-                            Thể loại: <span>{postDetail.category}</span>
-                        </p>
+                        <article className={cx('content')}>{postDetail.content}</article>
+                        <div className={cx('category')}>
+                            Thể loại:
+                            {categories ? (
+                                categories.map((c, i) => (
+                                    <span key={i} className={cx('category-item')}>
+                                        {c}
+                                    </span>
+                                ))
+                            ) : (
+                                <span className={cx('category-item')}></span>
+                            )}
+                        </div>
                         <div className={cx('date')}>
                             <FontAwesomeIcon color="orange" icon={faCalendarDays} />
-                            <span>{postDetail.publishedAt}</span>
+                            {published ? <span className={cx('time')}>{published.slice(0, 10)}</span> : <span></span>}
                         </div>
                         <div className={cx('author')}>
                             <FontAwesomeIcon color="gray" icon={faUser} />
-                            <span>{postDetail.author}</span>
+                            <span>{postDetail.userId}</span>
                         </div>
                     </div>
                 </div>

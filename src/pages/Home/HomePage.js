@@ -14,7 +14,7 @@ const HomePage = () => {
     useEffect(() => {
         setIsLoading(true);
         const fetchAPI = async () => {
-            const result = await axios.get('https://631e0ffccc652771a490d276.mockapi.io/api/collection/post');
+            const result = await axios.get('http://localhost:3001/api/post');
             const { data } = result;
             setPosts(data);
             setIsLoading(false);
