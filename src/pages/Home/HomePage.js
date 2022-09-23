@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import styles from './HomePage.module.scss';
 import classNames from 'classnames/bind';
 import Sidebar from '~/layouts/components/Sidebar';
-import axios from 'axios';
+import * as request from '~/ultils/httpRequest';
 import ListPost from '~/components/ListPost';
+// import httpRequest from '~/ultils/httpRequest';
 
 const cx = classNames.bind(styles);
 
@@ -14,9 +15,8 @@ const HomePage = () => {
     useEffect(() => {
         setIsLoading(true);
         const fetchAPI = async () => {
-            const result = await axios.get('http://localhost:3001/api/post');
-            const { data } = result;
-            setPosts(data);
+            const result = await request.get('post/');
+            setPosts(result);
             setIsLoading(false);
         };
         fetchAPI();

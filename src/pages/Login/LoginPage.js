@@ -6,26 +6,50 @@ import Button from '~/components/Button';
 import styles from './LoginPage.module.scss';
 import { Link } from 'react-router-dom';
 import config from '~/config';
+import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
 const LoginPage = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    // Handle the login
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+    };
+    const handlePassword = (e) => {
+        setPassword(e.target.value);
+    };
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
-                <form className={cx('form')}>
+                <form className={cx('form')} method="POST">
                     <h3 children={cx('title')}>Login</h3>
                     <div className={cx('row')}>
                         <i>
                             <FontAwesomeIcon icon={faUser} />
                         </i>
-                        <input className={cx('input')} type="email" required placeholder="Email" />
+                        <input
+                            onChange={handleEmail}
+                            className={cx('input')}
+                            type="email"
+                            required
+                            placeholder="Email"
+                            value={email}
+                        />
                     </div>
                     <div className={cx('row')}>
                         <i>
                             <FontAwesomeIcon icon={faLock} />
                         </i>
-                        <input className={cx('input')} type="password" placeholder="Password" />
+                        <input
+                            onChange={handlePassword}
+                            className={cx('input')}
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                        />
                     </div>
                     <p className={cx('text')}>Forgot Password?</p>
                     <Button className={cx('btn-login')}>Login</Button>

@@ -77,6 +77,26 @@
     }
 }
 
+.must-login {
+    width: var(--default-layout-width);
+    background-color: rgba(232, 226, 229, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid transparent;
+    background-color: var(--main-color);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        border-color: var(--main-color);
+        color: var(--main-color);
+        background-color: var(--white);
+    }
+}
+
 // Responsive
 @media only screen and (max-width: 480px) {
     .wrapper {

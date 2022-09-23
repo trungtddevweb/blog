@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const httpRequest = axios.create({
-    baseURL: process.env.GET_POST_URL,
+    baseURL: process.env.BASE_URL,
 });
 
 export const get = async (path, options = {}) => {
