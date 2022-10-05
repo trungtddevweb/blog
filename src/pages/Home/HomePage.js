@@ -4,7 +4,6 @@ import classNames from 'classnames/bind';
 import Sidebar from '~/layouts/components/Sidebar';
 import * as request from '~/ultils/httpRequest';
 import ListPost from '~/components/ListPost';
-// import httpRequest from '~/ultils/httpRequest';
 
 const cx = classNames.bind(styles);
 

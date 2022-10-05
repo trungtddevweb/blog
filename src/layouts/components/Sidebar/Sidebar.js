@@ -89,12 +89,12 @@ const Sidebar = () => {
                         </div>
                         <div className={cx('info')}>
                             <h5>Tran Dinh Trung</h5>
-                            <p className={cx('birthday')}>02/03/2001</p>
                             <p className={cx('bio')}>
-                                Muốn được tự do, đi du lịch thật nhiều nơi, trải nghiệm thật nhiều thứ trong cuộc sống
+                                "Có tình yêu nào thắng nổi thời gian. Có hạnh phúc xa vời nào bằng được sự ngọt ngào
+                                trước mắt!"
                             </p>
                             <p className={cx('total-posts')}>
-                                <span>10</span>bài viết
+                                <span>1 </span>bài viết
                             </p>
                         </div>
                     </div>

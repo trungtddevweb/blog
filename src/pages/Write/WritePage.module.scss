@@ -15,12 +15,6 @@
 }
 
 
-.img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -53,29 +47,18 @@
 
 .write-input {
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid transparent;
+    margin-bottom: 20px;
 
     &:focus {
         border-color: blue;
     }
 }
 
-.textarea {
-    width: 100%;
-    height: 120px;
-    border-radius: 8px;
-    margin: 10px 0;
-    font-size: 1.4rem;
-    border: none;
-    padding: 10px;
 
-    &:focus {
-        outline: none;
-    }
-}
 
 .must-login {
     width: var(--default-layout-width);
@@ -85,15 +68,34 @@
     text-align: center;
 }
 
-.btn {
+.btn-publish {
     border: 1px solid transparent;
     background-color: var(--main-color);
     transition: all .3s ease-in-out;
+    width: max-content;
 
     &:hover {
         border-color: var(--main-color);
         color: var(--main-color);
         background-color: var(--white);
+    }
+}
+
+
+
+.editorContainer {
+    background-color: var(--white);
+    margin-bottom: 40px;
+    height: 400px;
+}
+
+
+.editor {
+    height: 100%;
+    overflow: auto;
+
+    p {
+        font-size: 1.2rem;
     }
 }
 
