@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import Sidebar from '~/layouts/components/Sidebar';
 import * as request from '~/ultils/httpRequest';
 import ListPost from '~/components/ListPost';
+import axios from 'axios';
 
 const cx = classNames.bind(styles);
 
@@ -11,14 +12,24 @@ const HomePage = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [posts, setPosts] = useState([]);
 
+    // useEffect(() => {
+    //     setIsLoading(true);
+    //     const fetchAPI = async () => {
+    //         const result = await request.get('post/');
+    //         setPosts(result);
+    //         setIsLoading(false);
+    //     };
+    //     fetchAPI();
+    // }, []);
+
     useEffect(() => {
         setIsLoading(true);
-        const fetchAPI = async () => {
-            const result = await request.get('post/');
-            setPosts(result);
+        const fetchPost = async () => {
+            const result = await axios.get('/post');
+            setPosts(result.data);
             setIsLoading(false);
         };
-        fetchAPI();
+        fetchPost();
     }, []);
 
     return (

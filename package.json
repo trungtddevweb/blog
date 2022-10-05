@@ -53,5 +53,5 @@
         "react-icons": "^4.4.0",
         "sass": "^1.54.8"
     },
-    "proxy": "http://localhost:3001/api"
+    "proxy": "http://localhost:3001/api/"
 }

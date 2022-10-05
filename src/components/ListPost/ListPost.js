@@ -1,10 +1,9 @@
+import React, { useEffect, useState } from 'react';
+import ReactPaginate from 'react-paginate';
 import classNames from 'classnames/bind';
 import Post from '../Post';
 import styles from './ListPost.module.scss';
 import PropTypes from 'prop-types';
-
-import React, { useEffect, useState } from 'react';
-import ReactPaginate from 'react-paginate';
 
 const cx = classNames.bind(styles);
 
